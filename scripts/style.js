@@ -1,7 +1,7 @@
 //First Team
 varMinions = {Name: "The Minion Monsters", location: "San Francisco", teamCap: 100000000, dRating: 50, oRating: 45}
 varForrest = {Name: "Forrest Primus", Pos: "Point Guard", Cap: 25000000, dRating: 45, oRating: 47}
-varSamantha = {Name: "Samantha Primus", Pos: "Shooting Guard", Cap: 25000000, dRating: 45, oRating: 48}
+varSamantha = {Name: "Samantha Easey", Pos: "Shooting Guard", Cap: 25000000, dRating: 45, oRating: 48}
 varBob = {Name: "Bob Minion", Pos: "Small Forward", Cap: 22000000, dRating: 45, oRating: 43}
 varKevin = {Name: "Kevin Minion", Pos: "Power Forward", Cap: 18000000, dRating: 30, oRating: 43}
 varStuart = {Name: "Stuart Minion", Pos: "Center", Cap: 10000000, dRating: 20, oRating: 24}
@@ -35,24 +35,58 @@ var playerGrade = "F";
 }
 
 
-if (teamRating >= 450 && teamRating <= 500) {
-var teamGrade = "A";
-} else if (teamRating >= 350 && teamRating <= 449) {
-var teamGrade = "B";
-} else if (teamRating >= 250 && teamRating <= 349) {
-var teamGrade = "C";
-} else if (teamRating >= 150 && teamRating <= 240) {
-var teamGrade = "D";
-} else if (teamRating >= 50 && teamRating <= 149) {
-var teamGrade = "E";
+function rating(x){
+if (x >= 450 && x <= 500) {
+var team = "A"
+return team;
+} else if (x >= 350 && x <= 449) {
+var team = "B";
+return team;
+} else if (x >= 250 && x <= 349) {
+var team = "C";
+return team;
+} else if (x >= 150 && x <= 240) {
+var team = "D";
+return team;
+} else if (x >= 50 && x <= 149) {
+var team = "E";
+return team;
 } else {
-var teamGrade = "F";
+var team = "F";
+return team;
+}
 }
 
+
+
+
+//Random Number
+function getRandomScore(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
 
 //Game Logic
-var score;
 
-function game (team1, team2) {
-  if ()
+// Score function
+function getScore () {
+  if (teamGrade === "A") {
+console.log(getRandomScore(90, 140));
+} else if (teamGrade === "B") {
+console.log(getRandomScore(85, 135));
+} else if (teamGrade === "C") {
+console.log(getRandomScore(80, 130));
+} else if (teamGrade === "D") {
+console.log(getRandomScore(75, 125));
+} else if (teamGrade === "E") {
+console.log(getRandomScore(70, 120));
+} else {
+console.log(getRandomScore(65, 110));
 }
+}
+
+console.log(total);
+
+
+
+
+getRandomInteger(100, 140);
