@@ -1,12 +1,18 @@
 /*Universal Styles*/
 body {
   margin-top: 1rem;
-  background-color: rgb(233, 87, 24);
+  background-color: rgb(237, 218, 181);
+  font-family: 'Anton', sans-serif;
 }
 
 /*Main Section*/
 h1 {
   font-size: 5rem;
+  color: rgba(0, 0, 0, 0.81);
+}
+
+.welcome img {
+  width: 100%;
 }
 
 .container{
