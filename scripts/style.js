@@ -1,3 +1,5 @@
+tester.
+
 // //First Team
 // varMinions = {Name: "The Minion Monsters", location: "San Francisco", teamCap: 100000000, dRating: 50, oRating: 45}
 // varForrest = {Name: "Forrest Primus", Pos: "Point Guard", Cap: 25000000, dRating: 45, oRating: 47}
