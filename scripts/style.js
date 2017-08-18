@@ -1,63 +1,145 @@
-tester.
+//First Team
+var player1 = {
+Name: "Forrest Primus",
+Pos: "Point Guard",
+Cap: 25000000,
+dRating: 45,
+oRating: 47,
+total: function () {
+  return this.dRating + this.oRating;
+}
+}
 
-// //First Team
-// varMinions = {Name: "The Minion Monsters", location: "San Francisco", teamCap: 100000000, dRating: 50, oRating: 45}
-// varForrest = {Name: "Forrest Primus", Pos: "Point Guard", Cap: 25000000, dRating: 45, oRating: 47}
-// varSamantha = {Name: "Samantha Easey", Pos: "Shooting Guard", Cap: 25000000, dRating: 45, oRating: 48}
-// varBob = {Name: "Bob Minion", Pos: "Small Forward", Cap: 22000000, dRating: 45, oRating: 43}
-// varKevin = {Name: "Kevin Minion", Pos: "Power Forward", Cap: 18000000, dRating: 30, oRating: 43}
-// varStuart = {Name: "Stuart Minion", Pos: "Center", Cap: 10000000, dRating: 20, oRating: 24}
-//
-// //Second Team
-// varBuzz = {Name: "The Buzz Lightyears", location: "New York", teamCap: 100000000, dRating: 50, oRating: 45}
-// varOliver = {Name: "Oliver Primus", Pos: "Point Guard", Cap: 30000000, dRating: 48, oRating: 48}
-// varMurray = {Name: "Bill Murray", Pos: "Shooting Guard", Cap: 21000000, dRating: 45, oRating: 45}
-// varHanks = {Name: "Tom Hanks", Pos: "Small Forward", Cap: 27000000, dRating: 45, oRating: 48}
-// varNicholson = {Name: "Jack Nicholson", Pos: "Power Forward", Cap: 17000000, dRating: 28, oRating: 44}
-// varSandler = {Name: "Adam Sandler", Pos: "Center", Cap: 50000000, dRating: 15, oRating: 20}
-//
-//
-//
-// //Grading System
-// var playerRating = dRating + oRating;
-//
-//
-// if (playerRating >= 90 && playerRating <= 100) {
-// var playerGrade = "A";
-// } else if (playerRating >= 75 && playerRating <= 89) {
-// var playerGrade = "B";
-// } else if (playerRating >= 60 && playerRating <= 74) {
-// var playerGrade = "C";
-// } else if (playerRating >= 45 && playerRating <= 59) {
-// var playerGrade = "D";
-// } else if (playerRating >= 30 && playerRating <= 44) {
-// var playerGrade = "E";
-// } else {
-// var playerGrade = "F";
-// }
-//
-//
-// function rating(x){
-// if (x >= 450 && x <= 500) {
-// var team = "A"
-// return team;
-// } else if (x >= 350 && x <= 449) {
-// var team = "B";
-// return team;
-// } else if (x >= 250 && x <= 349) {
-// var team = "C";
-// return team;
-// } else if (x >= 150 && x <= 240) {
-// var team = "D";
-// return team;
-// } else if (x >= 50 && x <= 149) {
-// var team = "E";
-// return team;
-// } else {
-// var team = "F";
-// return team;
-// }
-// }
+
+
+var player2 = {
+Name: "Samantha Easey",
+Pos: "Shooting Guard",
+Cap: 25000000,
+dRating: 45,
+oRating: 48,
+total: function () {
+  return this.dRating + this.oRating;
+
+}
+}
+
+
+var player3 = {
+  Name: "Bob Minion",
+  Pos: "Small Forward",
+  Cap: 22000000,
+  dRating: 45,
+  oRating: 43,
+  total: function () {
+    return this.dRating + this.oRating;
+  }
+}
+
+var player4 = {
+  Name: "Kevin Minion",
+  Pos: "Power Forward",
+  Cap: 18000000,
+  dRating: 30,
+  oRating: 43,
+  total: function () {
+    return this.dRating + this.oRating;
+  }
+}
+
+var player5 = {
+  Name: "Stuart Minion",
+  Pos: "Center",
+  Cap: 10000000,
+  dRating: 20,
+  oRating: 24,
+  total: function () {
+    return this.dRating + this.oRating;
+  }
+}
+
+
+//Second Team
+var player6 = {
+Name: "Oliver Primus",
+Pos: "Point Guard",
+Cap: 30000000,
+dRating: 48,
+oRating: 48,
+total: function () {
+  return this.dRating + this.oRating;
+}
+}
+
+var player7 = {
+Name: "Bill Murray",
+Pos: "Shooting Guard",
+Cap: 21000000,
+dRating: 45,
+oRating: 45,
+total: function () {
+  return this.dRating + this.oRating;
+}
+}
+
+var player8 = {
+  Name: "Tom Hanks",
+  Pos: "Small Forward",
+  Cap: 27000000,
+  dRating: 45,
+  oRating: 48,
+  total: function () {
+    return this.dRating + this.oRating;
+  }
+}
+
+var player9 = {
+  Name: "Jack Nicholson",
+  Pos: "Power Forward",
+  Cap: 17000000,
+  dRating: 28,
+  oRating: 44,
+  total: function () {
+    return this.dRating + this.oRating;
+  }
+}
+
+var player10 = {
+  Name: "Adam Sandler",
+  Pos: "Center",
+  Cap: 50000000,
+  dRating: 15,
+  oRating: 20,
+  total: function () {
+    return this.dRating + this.oRating;
+  }
+ }
+
+
+
+
+
+function rating(x){
+if (x >= 450 && x <= 500) {
+var team = "A"
+return team;
+} else if (x >= 350 && x <= 449) {
+var team = "B";
+return team;
+} else if (x >= 250 && x <= 349) {
+var team = "C";
+return team;
+} else if (x >= 150 && x <= 240) {
+var team = "D";
+return team;
+} else if (x >= 50 && x <= 149) {
+var team = "E";
+return team;
+} else {
+var team = "F";
+return team;
+}
+}
 
 
 
@@ -89,6 +171,18 @@ function gameScore (teamGrade) {
 }
 
 
+// Collective team score
+var minion = player1.total() + player2.total() + player3.total() + player4.total() + player5.total();
+
+var buzz = player6.total() + player7.total() + player8.total() + player9.total() + player10.total();
+
+
+
+var buzzTotal = 0;
+var minionTotal = 0;
+
+
+
 /* I've stored the logic into a function with the idea that it could be stored
 in a click function for the user to be able to execute.
 */
@@ -106,13 +200,18 @@ function runGame() {
   var team2 = gameScore(team2Grade);
 
 console.log("Team 1 has " + team1 + " and Team 2 has " + team2);
+
 if (team1 > team2) {
     console.log("Team 1 wins!");
+    buzzTotal +=1;
 } else if (team1 < team2) {
     console.log("Team 2 wins!");
+    minionTotal +=1;
 } else {
     console.log("It's a goddamn tie");
 }
 
-console.log("Team 1 has " + team1total + " wins. Team 2 has " + tean2total + " wins.");
+console.log("Buzz has " + buzzTotal + " wins. Minions has " + minionTotal + " wins.");
 }
+
+runGame();
